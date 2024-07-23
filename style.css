@@ -235,14 +235,20 @@ section {
   width: 400px;
   margin: auto 0;
   
+}
+
+.img img{
+  width: 32vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--container-border);
   transition: 0.4s ease-in-out
 }
 
-.section__pic-container:hover {
+.img img:hover {
   box-shadow: 0 0 25px var(--container-border),
               0 0 50px var(--container-border);
+
+ 
 }
 
 .section__text {
@@ -377,13 +383,8 @@ section {
 }
 
 .about-pic {
-  
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-  border-radius: 25%;
-  transform: scale(0.75);
+  border-radius: 2rem;
+   
 }
 
 .arrow {
@@ -417,8 +418,8 @@ section {
   height: 80%;
 }
 
-.section__pic-container-2 {
-  display: flex;
+.section__pic-container {
+  
   height: 400px;
   width: 400px;
   margin: auto 0;
