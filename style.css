@@ -237,19 +237,8 @@ section {
   
 }
 
-.img img{
-  width: 32vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--container-border);
-  transition: 0.4s ease-in-out
-}
 
-.img img:hover {
-  box-shadow: 0 0 25px var(--container-border),
-              0 0 50px var(--container-border);
 
- 
-}
 
 .section__text {
   align-self: center;
@@ -382,9 +371,18 @@ section {
   display: flex;
 }
 
+
 .about-pic {
   border-radius: 2rem;
-   
+  box-shadow: 0 0 25px var(--container-border);
+  transition: 0.4s ease-in-out
+}
+
+.about-pic:hover {
+  box-shadow: 0 0 25px var(--container-border),
+              0 0 50px var(--container-border);
+
+ 
 }
 
 .arrow {
