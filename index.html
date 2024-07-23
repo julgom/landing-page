@@ -7,10 +7,11 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Julia Gomez</div>
+      <div class="logo">Julia <span>Gomez</span></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -31,7 +32,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Julia Gomez</div>
+      <div class="logo">Julia <span>Gomez</span> </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -75,6 +76,7 @@
             Contact Info
           </button>
         </div>
+        <!--
         <div id="socials-container">
           <img
             src="./assets/linkedin_light.png"
@@ -93,19 +95,24 @@
             onclick="location.href='https://github.com/'"
           />
         </div>
+      -->
+        <div class="social-icons">
+          <a href="#"><i class='bx bxl-linkedin-square' onclick="location.href='https://linkedin.com/'"></i></a>
+          <a href="#"><i class='bx bxl-github' onclick="location.href='https://github.com/'"></i></a>
+      </div>
       </div>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+       
           <img
             src="./assets/about-pic.png"
             alt="Profile picture"
             class="about-pic"
           />
-        </div>
+       
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -155,151 +162,76 @@
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-           
+        
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>Java</h3>
                   <p>Experienced</p>
-                  
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>Python</h3>
                   <p>Experienced</p>
                 </div>
               </article>
+            </div>
+            <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>HTML</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>CSS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>OpenAI</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
-              
-            </div>
-          </div>
-          <div class="details-container">
-            
-            <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>NextJS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
+            </div>
+            <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>ReactJS</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>FireBase</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>AWS</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
+                <div class="details-container">
                   <h3>DNS</h3>
                   <p>Basic</p>
                 </div>
               </article>
             </div>
-          </div>
-        </div>
-      </div>
+          
+        </div> 
+       
       <img
         src="./assets/arrow_light.png"
         src-light="./assets/arrow_light.png"
@@ -314,7 +246,7 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
+          <div class="details-container-2 color-container">
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
@@ -338,7 +270,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container-2 color-container">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
@@ -362,7 +294,7 @@
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
+          <div class="details-container-2 color-container">
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
