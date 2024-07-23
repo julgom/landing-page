@@ -397,7 +397,6 @@ article {
   display: flex;
   width: 10rem;
   justify-content: safe;
-  
   gap: 0.5rem;
 }
 
