@@ -59,12 +59,57 @@ p {
   color: var(--secondary-color-2);
 }
 
+
+
+.logo span{
+  color: var(--container-border);
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 9%;
+  background: #00000070;;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 3rem;
+  color: var(--secondary-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+
 span{
   color: var(--container-border);
 }
 
-.logo span{
+.navbar a{
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a.active{
   color: var(--container-border);
+  border-bottom: 3px solid var(--container-border);
+}
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--container-border);
+  display: none;
 }
 
 /* TRANSITION */
@@ -124,6 +169,7 @@ nav a:hover {
 .logo:hover {
   cursor: default;
 }
+
 
 /* HAMBURGER MENU */
 
@@ -275,13 +321,6 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-
-/*#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}*/
 
 .social-icons a{
   display: inline-flex;
@@ -469,6 +508,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+
 #projects {
   position: relative;
  
@@ -477,12 +517,15 @@ article .icon {
 .color-container {
   border-color: var(--container-border);
   background: var(--primary-color-2);
+  position: relative;
+  cursor: pointer;
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  transition: opacity 0.3s ease;
 }
 
 .project-title {
@@ -493,6 +536,34 @@ article .icon {
 .project-btn {
   color: var(--secondary-color);
   border-color: var(--container-border);
+}
+
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background: var(--background-color);
+  color: var(--secondary-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.details-container-2:hover .popup {
+  display: flex;
+  opacity: 1;
+}
+
+.details-container-2:hover .project-img {
+  opacity: 0.2;
 }
 
 /* CONTACT */
