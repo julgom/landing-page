@@ -430,6 +430,7 @@ section {
   color: var(--secondary-color);
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .social-icons a{
@@ -555,13 +556,14 @@ section {
 }
 
 .details-container-2 {
-  padding: 1.5rem;
+  padding: 0.5rem;
   flex: 1;
   background: var(--primary-color-2);
   border-radius: 2rem;
   border: var(--button-border);
   border-color: var(--container-border);
   text-align: center;
+  margin-bottom: -1rem;
 }
 
 .section-container {
