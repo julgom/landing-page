@@ -430,7 +430,7 @@ section {
   color: var(--secondary-color);
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 1rem;
+  
 }
 
 .social-icons a{
@@ -444,8 +444,11 @@ section {
   font-size: 2rem;
   border-radius: 50%;
   color: var(--container-border);
-  margin: 3rem 1.5rem 0;
+  margin: 3rem 0.5rem 0;
   transition: 0.3s ease;
+  margin-top: 1rem;
+  
+ 
 }
 .social-icons a:hover{
   color: var(--secondary-color);
@@ -463,11 +466,12 @@ section {
 
 /* BUTTONS */
 
+
+
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
-
 }
 
 .btn {
@@ -476,7 +480,8 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
-}
+
+} 
 
 .btn-color-1,
 .btn-color-2 {
@@ -557,7 +562,7 @@ section {
 }
 
 .details-container-2 {
-  padding: 0.5rem;
+  padding: 1rem;
   flex: 1;
   background: var(--primary-color-2);
   border-radius: 2rem;
