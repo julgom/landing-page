@@ -1,2 +1,2 @@
-# landing-page
+# Project 1: Personal Website
 
