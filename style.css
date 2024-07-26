@@ -54,7 +54,13 @@ h5{
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  color: var(--secondary-color-2);
+}
+
+h6{
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
   color: var(--secondary-color-2);
 }
 
@@ -300,132 +306,7 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-/*
 
-.wrapper{
-  display: flex;
-}
-
-.wrapper .static-txt{
-  color: var(--secondary-color-2);
-}
-
-.wrapper .dynamic-txts {
-  margin-left: 15px;
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-
-.dynamic-txts li { 
-  list-style: none;
-  color: var(--container-border);
-  top: 0;
-  position: relative;
-  animation: slide 10s steps(4) infinte;
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-.dynamic-txts li{
-  position: relative;
-}
-
-.dynamic-txts li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--background-color);
-  border-left: 2px solid var(--container-border);
-  animation: typing 3s steps(17) infinite;
-}
-
-@keyframes typing {
-  40%,
-  60%{
-    left: calc(100% + 30px);
-  }
-  100%{
-    left: 0;
-  }
-}*/
-
-/*
-.text-animation{ 
-  font-size: 34px;
-  font-weight: 600; 
-  min-width: 280px;
-}
-.text-animation span{
-  position: relative;
-}
-.text-animation span::before{
-  content: 'CS Student';
-  color: var(--container-border);
-  animation: words 20s infinite;
-}    
-.text-animation span::after{ 
-  content: "";
-  background-color: var(--background-color);
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 3px solid var(--background-color);
-  right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps
-  (17) infinite;
-}   
-@keyframes cursor{
-  to{
-      border-left: 2px solid var(--container-border);
-  }
-}
-@keyframes words{
-  0%,
-  33%{ 
-      content:'Teacher Assistant';
-  }    
-  34%,
-  66%{
-      content:'Career Prep Lead';
-  }
-  67%,
-  100%{
-      content: 'Aspiring SWE';
-  }
-}
-@keyframes typing{
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
-}
-*/
 .title {
   color: var(--secondary-color);
   font-size: 3rem;
@@ -472,6 +353,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .btn {
