@@ -384,7 +384,7 @@ section {
 }
 
 .btn-color-1:hover {
-   border: var(--button-border);
+  
   background: var(--secondary-color);
 }
 
