@@ -377,13 +377,14 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover,
 .btn-color-2:hover {
   background: var(--button-background);
   color: var(--primary-color);
 }
 
 .btn-color-1:hover {
+   border: var(--button-border);
   background: var(--secondary-color);
 }
 
