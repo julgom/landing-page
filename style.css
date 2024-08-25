@@ -377,7 +377,7 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1:hover,
+.btn-color-1:,
 .btn-color-2:hover {
   background: var(--button-background);
   color: var(--primary-color);
