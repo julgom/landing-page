@@ -366,10 +366,16 @@ section {
 
 } 
 
-.btn-color-1,
+.btn-color-1 {
+  border: var(--button-border);
+  color: var(--primary-color);
+  background: var(--button-background);
+}
+
 .btn-color-2 {
   border: var(--button-border);
-  color: var(--secondary-color-2);
+  color: var(--secondary-color);
+  background: none;
 }
 
 .btn-color-1:hover,
@@ -377,25 +383,21 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1:,
-.btn-color-2:hover {
-  background: var(--button-background);
-  color: var(--primary-color);
-}
 
 .btn-color-1:hover {
-  
   background: var(--secondary-color);
 }
 
-.btn-color-2 {
-  background: none;
-}
 
 .btn-color-2:hover {
   border: var(--button-border);
+  color: var(--primary-color);
   background: var(--secondary-color);
 }
+
+
+
+
 
 .btn-container {
   gap: 1rem;
